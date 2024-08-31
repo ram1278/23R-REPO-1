@@ -1,0 +1,55 @@
+<!-- Forms in HTML Day 6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body style="background-color:aqua;">
+    <center><form>
+        <center><h2>Basic Demo Form📜</h2></center>
+        <label for="FirstName">First Name:</label>
+        <input type="text" name="fname" id="firstname" placeholder="first name" />
+        <label for="FirstName">Middle Name:</label>
+        <input type="text" name="" value="middle name" disabled>
+        <label for="LastName">Last Name:</label>
+        <input type="text" name="lname" id="lastname" placeholder="last name" /><br><br>
+        <label>Enter an Email:</label>
+        <input type="email" name="mail" id="mail" placeholder="abc@gmail.com" autofocus /><br><br>
+        <label>Enter your Address:</label>
+        <input type="Address" name="address" id="address" placeholder="City Name" /><br><br>
+        <label>Enter a Password:</label>
+        <input type="password" name="password" id="pswd" value="******" pattern="[A-Za-z]{3}" autofocus required /><br><br>
+        <label>Enter Mobile Number:</label>
+        <input type="tel" name="mobile" id="mobile" placeholder="905-986-9687" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <!-- value="905-986-9687" -->
+        <label>Date of Birth:</label> 
+        <input type="date"><br><br>
+        <label for="pan">Enter PAN Number:</label>
+        <input type="text" name="pan" id="pan" maxlength="10" placeholder="ABCDE1234F" required><br><br>
+        <label>Time:</label> 
+        <input type="time"><br><br>
+        <label>Enter your Age:</label>
+        <input type="Age" name="age" id="age" placeholder="Age" value="23"><br><br>
+        <label>Gender:</label> 
+        <input type="radio" name="gender" value="Male">Male 
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Other">Other<br><br>
+        <label for="state">Choose a State:</label> 
+        <!-- disable select -->
+        <select name="state" id="state">
+            <option value="" disabled selected>Select State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Yanam">Yanam</option>
+        </select><br><br>
+        <label>What is your favourite languages?:</label> <br>
+        <input type="checkbox" name="skill" value="html">HTML
+        <input type="checkbox" name="skill" value="css">CSS
+        <input type="checkbox" name="skill" value="js">JavaScript<br><br>
+        <textarea rows="10" cols="100">Write any Feedback/Comments</textarea><br>
+        <input type="submit" value="Submit">
+    </center></form>
+</body>
+</html>
